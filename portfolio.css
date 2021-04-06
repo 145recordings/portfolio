@@ -1,8 +1,13 @@
 
+
+
+
 body{
     font-family: cambria, Calibiri, sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #575759;
+    overflow-x: hidden;
 }
 
 
@@ -10,6 +15,7 @@ header {
     background-color: #575759;
     color: #efeeeb;
     padding: 0;
+    padding-left: 200px;
     margin: 0;
     height: 1080px;
     text-align: center;
@@ -34,11 +40,12 @@ h2{
     text-align: center;
     
     height:540px;
+    padding-left: 200px;
 }
 
 #portfolio img {
     display: inline;
-    width: 15%;
+    width: 20%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -67,7 +74,7 @@ h2{
 nav {
     background-color: #f3f2f0;
     color: #575759;
-    width: 10%;
+    width: 200px;
     float: left;
     position: fixed;
     padding: 0;
@@ -96,32 +103,37 @@ nav ul li a {
 
 #aboutcontact{
     height: 540px;
-    background-color: #9b8386;
     color: #575759;
     margin: 0;
     padding: 0;
+    padding-left: 200px;
+    position: relative;
 }
 
 
 #about {
     display: inline;
-    width: 49%;
-    height: 100%;
+    width: 45%;
+    height: 96%;
     float: left;
-    border: 9.5px solid #9b8386;
+    border: 9.5px solid black;
     background-color: #f3f2f0;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
     
 }
 #contact {
     display: inline;
-    width: 49%;
-    height: 100%;
+    width: 45%;
+    height: 96%;
     float: right;
-    border: 9.5px solid #9b8386;
+    border: 9.5px solid black;
     background-color: #f3f2f0;
     text-align: center;
-    
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -136,5 +148,114 @@ nav ul li a {
 #about p {
     font-size: 1.5em;
 }
+
+footer {
+    bottom: 0;
+    background-color:  #c1bdb3;
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    height: 100px;
+    padding-left: 200px;
+    
+    
+}
+
+footer div{
+    padding-top: 40px;
+}
+
+/* -------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px){
+    header{
+        
+    }
+    
+    nav{
+        
+        float: none;
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        
+    }
+    
+    nav ul {
+        display: inline;
+        float:right;
+        margin: 0;
+        padding: 10px;
+        
+    }
+    
+    nav ul li {
+        padding: 10px;
+        
+    }
+    
+    header h1 {
+        font-size: 2em;
+        padding-top: 300px;
+    }
+    
+    header{
+        height: 512px;
+        padding: 0;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    #portfolio img {
+        display: block;
+        width: 75%;
+        
+    }
+    
+    #portfolio {
+        height: auto;
+        padding: 0;
+        padding-bottom: 150px;
+    }
+    
+    #aboutcontact{
+        padding:0;
+        
+    }
+    
+    #about {
+        display: block;
+        float: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    #contact{
+        display: block;
+        float: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+            
+    }
+    
+    footer {
+        display: none;
+    
+    }
+    
+   
+}
+
+
+
+/*need to make footer stay bottom in mobile */
+
+
+
+
 
 
